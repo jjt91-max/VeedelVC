@@ -1,16 +1,56 @@
-# React + Vite
+# 🥗 Veedel Vital – Frische Salatbar am Chlodwigplatz
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Website für die frische Salatbar **Veedel Vital** in der Kölner Südstadt, direkt am Chlodwigplatz.
 
-Currently, two official plugins are available:
+## Tech-Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **React 19** – UI Framework
+- **Vite 8** – Build-Tool & Dev-Server
+- **Tailwind CSS 4** – Utility-first CSS Framework
+- **Lucide React** – Icons
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🏠 **Hero-Section** mit Öffnungszeiten (Mo–Fr, 10–15 Uhr)
+- 🥗 **Interaktive Speisekarte** mit Filter nach Getränken, Salaten & Pasta
+- 🏢 **B2B Catering Portal** mit:
+  - Bundle-Konfigurator (Pauschalpreise pro Person 18,50€ – 24,90€)
+  - Mix & Match – individuell zusammenstellbare Team-Lunches
+  - Lieferlogik (15€ Pauschale unter 150€, gratis ab 150€)
+  - Checkout mit Bestellformular
+- 📱 **Responsive Design** – für Desktop & Mobile
 
-## Expanding the ESLint configuration
+## Entwicklung
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+# Abhängigkeiten installieren
+npm install
+
+# Dev-Server starten
+npm run dev
+
+# Production-Build
+npm run build
+
+# Vorschau des Builds
+npm run preview
+```
+
+## Deployment
+
+Das Projekt kann als statische Website deployt werden (z. B. Vercel, Netlify, GitHub Pages).
+Der Build-Output liegt im `dist/`-Verzeichnis und wird mit `npm run build` erzeugt.
+
+## Projekt-Struktur
+
+```
+veedel-vital/
+├── public/          # Statische Assets (favicon, icons)
+├── src/             # React-Quellcode
+│   ├── main.jsx     # Einstiegspunkt
+│   └── App.jsx      # Hauptkomponente
+├── dist/            # Build-Output (generiert)
+├── index.html       # HTML-Template
+├── vite.config.js   # Vite-Konfiguration
+└── package.json     # Abhängigkeiten & Scripts
+```
